@@ -22,12 +22,12 @@ EmailClient::~EmailClient()
 
 void EmailClient::connectToServer(const EmailAccount &account)
 {
-    // 启动超时定时器（10秒超时）
-    m_timeoutTimer->start(10000);
+    // 启动超时定时器（3秒超时，更快响应）
+    m_timeoutTimer->start(3000);
     m_currentAccount = account;
     m_connected = false;
 
-    qDebug() << "=== 连接邮件服务器 ===";
+    qDebug() << "=== 开始连接邮件服务器 ===";
     qDebug() << "服务器:" << account.imapServer;
     qDebug() << "端口:" << account.imapPort;
     qDebug() << "加密:" << account.imapEncryption;
@@ -44,9 +44,10 @@ void EmailClient::connectToServer(const EmailAccount &account)
     if (success) {
         m_connected = true;
         emit connectionStatusChanged(true);
-        qDebug() << "成功连接到邮件服务器";
+        qDebug() << "✅ 成功连接到邮件服务器";
     } else {
         emit errorOccurred("连接失败: 无法连接到邮件服务器");
+        qDebug() << "❌ 邮件服务器连接失败";
     }
 
     // 停止超时定时器

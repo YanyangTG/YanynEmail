@@ -22,12 +22,17 @@ LIBS += -L$$MY_PWD/libs/openssl/libs -lssl -lcrypto
 
 # Windows 平台特定的库链接
 win32 {
-    # Windows Socket 库（这些系统库应该能找到）
+    # Windows Socket 库
     LIBS += -lws2_32 -lwsock32 -lcrypt32
 
-    # 移除找不到的库链接，让 mailio 使用内置实现
-    # LIBS -= -lssl -lcrypto -lboost_system -lboost_date_time
+    # 明确指定库文件路径以避免链接错误
+    LIBS += $$MY_PWD/libs/mailio/libs/libmailio.dll.a
+    LIBS += $$MY_PWD/libs/openssl/libs/libssl.dll.a
+    LIBS += $$MY_PWD/libs/openssl/libs/libcrypto.dll.a
 }
+
+# 禁用 Boost ASIO 弃用警告
+QMAKE_CXXFLAGS += -DBOOST_ASIO_DISABLE_DEPRECATION_WARNINGS
 
 SOURCES += \
     main.cpp \
