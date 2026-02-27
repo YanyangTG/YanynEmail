@@ -1,0 +1,102 @@
+* {
+    font-family: "Source Han Sans CN";
+}
+
+/* 圆角设计 */
+QPushButton {
+    border-radius: 6px;
+}
+
+QLineEdit, QTextEdit, QPlainTextEdit {
+    border-radius: 6px;
+}
+
+QListWidget, QTreeWidget, QTableView {
+    border-radius: 6px;
+}
+
+QGroupBox {
+    border-radius: 8px;
+}
+
+QScrollBar:vertical {
+    border-radius: 4px;
+}
+
+QScrollBar:horizontal {
+    border-radius: 4px;
+}
+
+QMainWindow {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Source Han Sans CN";
+}
+
+QWidget {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+QPushButton {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;
+}
+
+QPushButton:checked {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+
+QListWidget {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+}
+
+QListWidget::item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+QListWidget::item:selected {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+
+QTextEdit {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+}
+
+QGroupBox {
+    color: #000000;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+QRadioButton {
+    color: #000000;
+}
+
+QCheckBox {
+    color: #000000;
+}
+
+QLabel {
+    color: #000000;
+}
+
+QDialog {
+    background-color: #ffffff;
+    color: #000000;
+}

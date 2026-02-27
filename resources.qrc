@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icon.png</file>
+        <file>resources/inbox.png</file>
+        <file>resources/send.png</file>
+        <file>resources/like.png</file>
+        <file>resources/garbage.png</file>
+        <file>resources/setting.png</file>
+        <file>resources/user.png</file>
+        <file>resources/light.qss</file>
+        <file>resources/dark.qss</file>
+        <file>resources/blue.qss</file>
+        <file>resources/SourceHanSansCN-Regular.ttf</file>
+    </qresource>
+</RCC>
