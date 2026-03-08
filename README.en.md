@@ -1,5 +1,5 @@
 # Yanyn Email
-The official client of Yanyn Email is based on the Qt6 framework and supports QQ Email, 163 Email, Outlook Email, Gmail Email, etc. 
+The official client of Yanyn Email is based on the Qt6 and supports QQ Email, 163 Email, Outlook Email, Gmail Email, etc. 
  
 
 
@@ -21,7 +21,7 @@ The official client of Yanyn Email is based on the Qt6 framework and supports QQ
 - OpenSSL
  
  
-## Link
+## Links
  
  
 - https://www.yanyn.cn/
