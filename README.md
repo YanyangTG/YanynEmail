@@ -1,4 +1,4 @@
-[English Version](README EN.md)
+[English Version](README.en.md)
 
 # Yanyn Email
 晏阳邮箱的官方客户端，基于Qt6框架，支持QQ邮箱、163邮箱、Outlook邮箱、Gmail邮箱等。
